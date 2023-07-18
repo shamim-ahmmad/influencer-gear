@@ -1,0 +1,135 @@
+/* fonts family for all text  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header section start here  */
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.products-name > ul {
+  display: flex;
+  gap: 20px;
+  /* border: 1px solid black; */
+  margin-right: 80px;
+}
+.products-title {
+  /* border: 1px solid gray; */
+  margin-left: 100px;
+  color: #3a3a3a;
+  font-size: 1.5rem;
+}
+
+/* journey section start here  */
+.journey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-top: 20px;
+}
+.journey-content {
+  width: 50%;
+  /* border: 1px solid red; */
+  margin-left: 100px;
+  /* text-align: center; */
+}
+.journey-img {
+  width: 50%;
+  /* border: 1px solid blue; */
+  background-image: url("../images/Circle\ design.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 120px;
+}
+.journey-img img {
+  width: 400px;
+  /* padding-left: 20px; */
+}
+.journey-title {
+  color: #3a3a3a;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.font-description {
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-primary {
+  border-radius: 41px;
+  background: #e02c6d;
+  padding: 10px 20px;
+}
+/* journey section end here  */
+
+/* sponsors section  */
+.sponsors-names {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 50px auto;
+}
+.sponsors-name img {
+  width: 55.051px;
+  height: 31.065px;
+}
+
+/* collection section start here  */
+.collection-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.collection-item {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  width: 300px;
+  border: 1px solid red;
+}
+.collection-item img {
+  width: 100%;
+}
+.star-rating {
+  color: #fb8200;
+}
+
+/* responsive for media query  */
+@media screen and (max-width: 576px) {
+  nav,
+  .journey,
+  .sponsors-names {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .journey-img img {
+    width: 300px;
+    background-position: left center;
+  }
+  .journey-content {
+    width: 90%;
+    margin-left: 0;
+  }
+  .sponsors-name img {
+    width: 10%;
+    height: 10px;
+  }
+}
